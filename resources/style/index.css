@@ -143,6 +143,7 @@ section[aria-labelledby="projects"] a{
     font-size: 2rem;
     background-color: black;
     color: white;
+    text-decoration: none;
     border-radius: 5px;
     position: relative;
     bottom: 8px;
