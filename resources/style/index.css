@@ -83,6 +83,13 @@ section section, section[aria-labelledby="projects"]{
     row-gap: 1rem;
 }
 
+@media only screen and (orientation: portrait){
+    section section, section[aria-labelledby="projects"]{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .image-container {
     grid-column: 2;
 }
