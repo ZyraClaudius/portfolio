@@ -6,12 +6,35 @@ for(let info of infos){
 }
 
 function toggleFix(event){
+    console.log('fixing');
+    console.log(event.target.id);
     let respInfo = document.getElementById(event.target.id+'info');
     if(respInfo.getAttribute('data-fixed')){
         respInfo.setAttribute('data-fixed','')
+        if(respInfo.getAttribute('data-toggled')){
+            respInfo.style.display = 'none';
+            respInfo.setAttribute('data-toggled','')
+        }
     } else{
+        if(!respInfo.getAttribute('data-toggled')){
+            respInfo.setAttribute('data-toggled','true');
+            respInfo.style.display = 'flex';
+        } 
         respInfo.setAttribute('data-fixed','true')
     }
+    
+    console.log('finding the other one');
+    let otherfixer = 'linkedininfo';
+    if(event.target.id === 'instagram'){
+        otherfixer = document.getElementById('emailinfo');
+    } else if(event.target.id === 'email'){
+        otherfixer = document.getElementById('instagraminfo');
+    } else {
+        console.log('something has gone badly wrong');
+    }
+    otherfixer.style.display = 'none';
+    otherfixer.setAttribute('data-fixed','');
+    otherfixer.setAttribute('data-toggled','');
 }
 
 function toggleDisplay(event){
