@@ -1,0 +1,165 @@
+#banner {
+    background-image: url(../images/276275517_3093837444262246_2419186456863895285_n.jpg);
+    background-size: cover;
+    position: relative;
+    top: 5rem; 
+    display: grid;
+}
+
+#banner img {
+    visibility: hidden;
+    width: 100%;
+    height: auto;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#overlay {
+    background-color: rgba(0,0,0,0.75);
+    z-index: 1;
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 5rem;
+    font-family: sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+main {
+    position: relative;
+    top: 7rem;
+    margin: 2rem;
+    line-height: 1.5rem;
+}
+
+main ul {
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.scroller {
+    z-index: 1;
+    position:relative;
+    bottom: 6rem;
+}
+
+#quickline {
+    margin-top: 2rem;
+}
+
+p{
+    grid-column: 1;
+    margin: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+h3 {
+    margin-left: 1rem;
+    margin-top: 4rem
+}
+
+h4 {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+section section, section[aria-labelledby="projects"]{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    row-gap: 1rem;
+}
+
+.image-container {
+    grid-column: 2;
+}
+
+section section h4 {
+    grid-column: 1;
+}
+
+.inset{
+    margin-left: 3em;
+}
+
+main img {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+}
+
+.image-container {
+    display: grid;
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+    visibility: hidden;
+    margin: 0;
+    text-align: center;
+    z-index: 1;
+    vertical-align: middle;
+}
+
+.image-container:hover .overlay {
+    visibility: visible;
+}
+
+#projects {
+    display: inline-block;
+    margin-top: 5rem;
+}
+
+section[aria-labelledby="projects"] a{
+    text-decoration: none;
+}
+
+#randomsite {
+    display: inline;
+    border: none;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    bottom: 8px;
+    box-shadow: 4px 4px 2px rgb(100,100,100);
+    cursor: pointer;
+}
+
+#randomsite:hover {
+    position: relative;
+    right: 4px;
+    bottom: 12px;
+    box-shadow: 8px 8px 2px rgb(100,100,100);
+}
+
+#randomsite:active {
+    right: 0;
+    left: 4px;
+    bottom: 4px;
+    box-shadow: none;
+}
