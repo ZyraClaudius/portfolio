@@ -1,3 +1,27 @@
+/* Sizing overlays*/
+function resizeOverlays(){
+    let overlays = document.getElementsByClassName('overlay');
+    for(let overlay of overlays){
+        let container = overlay.parentElement;
+        let image = container.getElementsByTagName('img')[0];
+        let imageStyles = window.getComputedStyle(image);
+        overlay.style.height = imageStyles.getPropertyValue('height');
+        overlay.style.width = imageStyles.getPropertyValue('width');
+    }
+}
+
+function timeOverlays(){
+    let overlays = document.getElementsByClassName('overlay');
+    for(let overlay of overlays){
+        overlay.style.height = '0';
+        overlay.style.width = '0';
+    }
+    const timeout = setTimeout(resizeOverlays,1);
+}
+
+timeOverlays()
+window.addEventListener('resize',timeOverlays);
+
 /* Random site */
 let sites = ["https://zyraclaudius.github.io/theTeapot"];
 let randomSite = document.getElementById('randomsite');
