@@ -1,3 +1,12 @@
+/*Setting offset*/
+let navHeight = window.getComputedStyle(document.querySelector('nav')).getPropertyValue('height');
+let banner = document.getElementById('banner');
+let main = document.querySelector('main');
+let footer = document.querySelector('footer');
+banner.style.top = navHeight;
+main.style.top = navHeight + 10;
+footer.style.top = navHeight;
+
 /* Sizing overlays*/
 function resizeOverlays(){
     let overlays = document.getElementsByClassName('overlay');
@@ -19,7 +28,7 @@ function timeOverlays(){
     const timeout = setTimeout(resizeOverlays,1);
 }
 
-timeOverlays()
+resizeOverlays()
 window.addEventListener('resize',timeOverlays);
 
 /* Random site */
