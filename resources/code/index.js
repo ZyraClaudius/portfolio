@@ -33,7 +33,7 @@ function timeOverlays(){
     const timeout = setTimeout(resizeOverlays,1);
 }
 
-resizeOverlays()
+timeOverlays();
 window.addEventListener('resize',timeOverlays);
 
 /* Random site */
