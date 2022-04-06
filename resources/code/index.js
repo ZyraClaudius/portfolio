@@ -1,12 +1,16 @@
 /*Setting offset*/
-console.log("Setting offset");
-let navHeight = window.getComputedStyle(document.querySelector('nav')).getPropertyValue('height');
-let banner = document.getElementById('banner');
-let main = document.querySelector('main');
-let footer = document.querySelector('footer');
-banner.style.top = navHeight;
-main.style.top = navHeight + 10;
-footer.style.top = navHeight;
+function offset(){
+    console.log("Setting offset");
+    let navHeight = window.getComputedStyle(document.querySelector('nav')).getPropertyValue('height');
+    let banner = document.getElementById('banner');
+    let main = document.querySelector('main');
+    let footer = document.querySelector('footer');
+    banner.style.top = navHeight;
+    main.style.top = navHeight + 10;
+    footer.style.top = navHeight;
+}
+
+setTimeout(offset,100);
 
 /* Sizing overlays*/
 function resizeOverlays(){
