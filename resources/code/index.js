@@ -30,7 +30,7 @@ function timeOverlays(){
         overlay.style.height = '0';
         overlay.style.width = '0';
     }
-    const timeout = setTimeout(resizeOverlays,1);
+    const timeout = setTimeout(resizeOverlays,100);
 }
 
 timeOverlays();
