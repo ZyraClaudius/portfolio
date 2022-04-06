@@ -2,7 +2,7 @@
     background-image: url(../images/276275517_3093837444262246_2419186456863895285_n.jpg);
     background-size: cover;
     position: relative;
-    top: 5rem; 
+    top: 87px; 
     display: grid;
 }
 
@@ -34,7 +34,7 @@ h1 {
 
 main {
     position: relative;
-    top: 7rem;
+    top: 100px;
     margin: 2rem;
     line-height: 1.5rem;
 }

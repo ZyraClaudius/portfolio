@@ -1,4 +1,5 @@
 /*Setting offset*/
+console.log("Setting offset");
 let navHeight = window.getComputedStyle(document.querySelector('nav')).getPropertyValue('height');
 let banner = document.getElementById('banner');
 let main = document.querySelector('main');
