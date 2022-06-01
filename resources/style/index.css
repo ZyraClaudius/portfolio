@@ -1,3 +1,7 @@
+.italic {
+    font-style: italic;
+}
+
 #banner {
     background-image: url(../images/276275517_3093837444262246_2419186456863895285_n.jpg);
     background-size: cover;
