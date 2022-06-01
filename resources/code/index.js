@@ -37,7 +37,7 @@ timeOverlays();
 window.addEventListener('resize',timeOverlays);
 
 /* Random site */
-let sites = ["https://zyraclaudius.github.io/theTeapot","http://albumshuffle.surge.sh"];
+let sites = ["https://zyraclaudius.github.io/theTeapot","https://albumshuffle.netlify.app"];
 let randomSite = document.getElementById('randomsite');
 function linkRandomSite(event){
     console.log('getting random site');
